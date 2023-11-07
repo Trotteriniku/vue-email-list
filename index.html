@@ -10,9 +10,13 @@
 </head>
 <body>
     <div id="app">
-        <ul class="text-center text-capitalize ">
+
+        <ul v-show="emailsLength >= 10" class="text-center text-capitalize ">
             <li v-for="email in emails" class="list-unstyled"><a href="">{{email}}</a></li>
         </ul>
+     
+        
+
     </div>
     
     
